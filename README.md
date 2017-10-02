@@ -3,4 +3,4 @@ Requirements:
   * aiohttp
 
 python -m pip install -r requirements.txt  
-python3 crawl.py xkcd.com  
+python crawl.py xkcd.com  
