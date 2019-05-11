@@ -72,7 +72,7 @@ class Crawler:
         self.t1 = None
 
     def close(self):
-        self.session.close()
+        asyncio.ensure_future(self.session.close())
 
     def host_okay(self, host: str) -> bool:
         """Check if a host should be crawled."""
